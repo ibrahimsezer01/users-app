@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <% if (isAuth) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/site/users"><%= nickName %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/site/logout">Log Out</a>
+          </li>
+          <% } else { %>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/site/login">Log in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/site/register">Register</a>
+            </li>
+            <% } %>
+
+      </ul>
+    </div>
+  </div>
+</nav>

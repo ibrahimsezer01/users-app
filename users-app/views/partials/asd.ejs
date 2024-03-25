@@ -1,0 +1,18 @@
+<div class="mb-3">
+    <label for="city" class="form-label">City:</label>
+    <select name="city">
+        <option value="-1">Seçiniz</option>
+        <% cities.forEach(city => { %>
+            <option value="<%= city.id %>"><%= city.name %></option>
+        <% }) %>
+    </select>
+</div>
+<div class="mb-3">
+    <label for="district" class="form-label">District:</label>
+    <select name="district">
+        <option value="-1">Seçiniz</option>
+        <% districts.forEach(district => { %>
+            <option value="<%= district.id %>"><%= district.name %></option>
+        <% }) %>
+    </select>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <title>User Delete</title>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/nav') %>
+    </header>
+    <div class="container mt-5">
+        <h1>User Delete</h1>
+        <form enctype="multipart/form-data" method="POST">
+            <p>Are you sure you want to delete user <%= user.firstName %> <%= user.lastName %>?</p>
+            <button type="submit" class="btn btn-danger me-2">Yes, delete</button>
+            <a href="/site/users" class="btn btn-secondary">No, I don't want</a>
+        </form>
+    </div>
+</body>
+
+</html>
